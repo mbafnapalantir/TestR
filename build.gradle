@@ -20,6 +20,12 @@ buildscript {
 apply plugin: 'com.palantir.transforms.lang.python-library'
 apply plugin: 'com.palantir.transforms.lang.python-library-defaults'
 
+conda {
+    build {
+        buildString = "r36_0"
+    }
+}
+
 // Apply the testing plugin
 // apply plugin: 'com.palantir.transforms.lang.pytest-defaults'
 
